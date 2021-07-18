@@ -25,3 +25,22 @@ Start time: _____
 Finish time: _____
 
 Actual time needed to complete: _____
+
+### Lab 03
+
+Number and name of feature:
+Display a Modal
+Why are we implementing this feature?
+As a user, I want the image to be displayed in a larger size and with the description shown so that I can view the details of a single image.
+What are we going to implement?
+Given that a user wants to view the details of the image
+When the user clicks on an individual image
+Then the image should render larger on the screen with the description displayed
+
+Estimate of time needed to complete: 1 class day
+
+Start time: 
+
+Finish time: 
+
+Actual time needed to complete: 

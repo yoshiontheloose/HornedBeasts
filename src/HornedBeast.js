@@ -1,13 +1,12 @@
 import React from 'react';
 
 import Card from 'react-bootstrap/Card'
-import CardColumns from 'react-bootstrap/CardColumns'
 import './HornedBeast.css'
 
 class HornedBeast extends React.Component {
 
   // adding the state for user interaction with votes
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       timesClicked: 0,
@@ -19,6 +18,8 @@ class HornedBeast extends React.Component {
     this.setState({
       timesClicked: this.state.timesClicked + 1,
     })
+
+    this.props.handleShowModal(this.props.beast);
   }
 
   favorite = () => {
@@ -29,21 +30,20 @@ class HornedBeast extends React.Component {
 
   render() {
     return (
-      <CardColumns>
-        <Card className="text-center" border="info" style={{ width: '18rem' }}>
-
-
-          <Card.Title>{this.props.title}</Card.Title>
-          <Card.Img 
-            src={this.props.imageUrl}
-            alt={this.props.description}
-            title={this.props.title}
-            onClick={this.addClick}
-            />
-          <Card.Text>{this.state.timesClicked ? this.state.timesClicked + ':heart:' : ''}</Card.Text>  
-          <Card.Text>{this.props.description}</Card.Text>
-        </Card>
-      </CardColumns>
+      <Card
+        className="text-center"
+        border="info"
+        style={{ width: '18rem' }}>
+        <Card.Title>{this.props.beast.title}</Card.Title>
+        <Card.Img
+          src={this.props.beast.image_url}
+          alt={this.props.beast.description}
+          title={this.props.beast.title}
+          onClick={this.addClick}
+        />
+        <Card.Text>{this.state.timesClicked ? this.state.timesClicked + ' 💖 ' : ''}</Card.Text>
+        <Card.Text>{this.props.beast.description}</Card.Text>
+      </Card>
     )
   }
 }

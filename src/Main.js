@@ -16,11 +16,10 @@ class Main extends React.Component {
     // main component should pass props for the title, image and description to each horned beast element
     // renders beast data from json file
     let beastsToRender = this.props.data.map((beast, i) => 
-      <HornedBeast
+      <HornedBeast 
+        handleShowModal={this.props.handleShowModal}
         key={i}
-        title={beast.title}
-        imageUrl={beast.image_url}
-        description={beast.description}
+        beast={beast}
         />
       );
 

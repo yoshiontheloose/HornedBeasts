@@ -47,8 +47,10 @@ Feature #3: Bootstrap
 
 **Number and name of feature:**
 Feature #1: Display a Modal
+
 Why are we implementing this feature?
 As a user, I want the image to be displayed in a larger size and with the description shown so that I can view the details of a single image.
+
 What are we going to implement?
 Given that a user wants to view the details of the image
 When the user clicks on an individual image
@@ -61,3 +63,24 @@ Then the image should render larger on the screen with the description displayed
 **Finish time:** 7/19
 
 **Actual time needed to complete:** 6 Hours
+
+### Lab 04
+
+**Number and name of feature:**
+
+Feature #1: Filter by Numbers of Horns
+
+As a user, I want to be able to view the beasts by the number of horns
+
+What are we going to implement?
+Given that a user is presented with filtering options
+When the user clicks on one option
+Then the images should be filtered accordingly
+
+**Estimate of time needed to complete:** 2 days
+
+**Start time:** 7/20
+
+**Finish time:** 7/21
+
+**Actual time needed to complete:** 2 class periods
